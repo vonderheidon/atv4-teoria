@@ -19,20 +19,20 @@ public class Questao1 {
                 if (cadeia.charAt(indice) == 'a') {
                     indice++;
                 } else {
-                    simboloAtual = ' ';
+                    simboloAtual = 'ε';
                 }
             } else if (simboloAtual == 'B') {
                 if (cadeia.charAt(indice) == 'b') {
                     indice++;
                 } else {
-                    simboloAtual = ' ';
+                    simboloAtual = 'ε';
                 }
             } else {
                 return false;
             }
         }
 
-        return simboloAtual == 'A' || simboloAtual == 'B' || simboloAtual == ' ';
+        return simboloAtual == 'A' || simboloAtual == 'B' || simboloAtual == 'ε';
     }
 
     public static void main(String[] args) {
